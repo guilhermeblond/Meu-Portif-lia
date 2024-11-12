@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: background-color 0.5s ease-in-out, color 0.3s;
+    text-align: center;
+
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255)
+}
+
+header button {
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: grab;
+    border-radius: 50px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+
+
+}
+
+
+section {
+    padding: 40px;
+    margin: 20px auto;
+    height: 100vh;
+    border-radius: 50px;
+
+}
+
+div {
+    width: 50%;
+
+
+}
+
+img {
+    height: 400px;
+    border-radius: 40px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform: none;
+    margin: 20px;
+}
+
+#Projetos {
+    display: flex;
+    /* text-align: center;  */
+
+
+}
+
+#Sobremim {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgba(255, 0, 0, 0.748);
+}
+
+.projeto {
+    background-color: rgb(255, 42, 0);
+    padding: 15px;
+    margin-bottom: 100px;
+    border-radius: 5px;
+    width: 40%;
+    height: 300px;
+    margin: 1%;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.projeto:hover {
+    transform: scale(1.4)
+}
+
+
+.dark-theme {
+    background-color: rgb(20, 19, 19);
+    color: rgb(225, 211, 211);
+}
+
+.dark-theme header {
+    background-color: black;
+}
+
+.dark-theme header button {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 254, 254);
+}
+
+.dark-theme .projetos {
+    background-color: darkgray;
+}
+
+@media screen and(max-width: 100px) {
+    section {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    #Sobremim {
+        flex-direction: column-reverse;
+    }
+
+    div {
+        width: 100%;
+    }
+
+    #projetos {
+        height: 100%;
+    }
+
+    .projeto {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 400px;
+    }
+
+    .projeto2 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    h2 {
+        font-size: 2.5em;
+        /* text-align: center; */
+
+    }
+}
